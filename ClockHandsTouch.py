@@ -1,11 +1,10 @@
 """main"""
-def main(hour, minn):
+def main():
     """main function"""
-    num1 = minn*6
-    num2 = hour*30 + minn*0.5
-    if num2-num1 < 6 and num2-num1 >= 0:
+    hour, mins = int(input()), int(input())
+    if 0 <= (hour*30 + mins*.5) - (mins*6) < 6:
         print("True")
-    else:
-        print("False")
+        return
+    print("False")
 
-main(int(input()), int(input()))
+main()
