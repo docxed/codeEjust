@@ -20,21 +20,14 @@ def main():
         "l": " *   ",
         "r": "   * "
     }
-
-    for _ in raw: #onframe
-        print("  *  ", end=" ")
+    _ = [print("  *  ", end=" ") for i in raw]
     print()
-    for i in raw: #level_1
-        print(level_1[i], end=" ")
+    _ = [print(level_1[i], end=" ") for i in raw]
     print()
-    for i in raw: #level_2
-        print(level_2[i], end=" ")
+    _ = [print(level_2[i], end=" ") for i in raw]
     print()
-    for i in raw: #level_3
-        print(level_3[i], end=" ")
+    _ = [print(level_3[i], end=" ") for i in raw]
     print()
-    for _ in raw: #framingframe
-        print("  *  ", end=" ")
-    print()
+    _ = [print("  *  ", end=" ") for _ in raw]
 
 main()
