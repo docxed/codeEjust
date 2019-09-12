@@ -1,7 +1,6 @@
 """main"""
 def main():
     """main funtion"""
-    txt = input()
-    print(txt.lower())
- 
+    _ = [print(input().lower())]
+
 main()
