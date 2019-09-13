@@ -20,7 +20,7 @@ def main():
         "l": " *   ",
         "r": "   * "
     }
-    _ = [print("  *  ", end=" ") for i in raw]
+    _ = [print("  *  ", end=" ") for _ in raw]
     print()
     _ = [print(level_1[i], end=" ") for i in raw]
     print()
