@@ -22,7 +22,6 @@ def main():
             get = True
     if get == None:
         print("Nope")
-    else:
-        _ = [print(k) for k in world_txt]
+    _ = [print(k) for k in world_txt]
  
 main()
