@@ -15,18 +15,6 @@ def main():
                 keep += j
         digit.append(keep)
         keep = ""
-    digit = list(map(int, digit))
-    endgame(alpha, digit)
- 
-def endgame(alpha, digit):
-    """end_game function"""
-    res = ""
-    while 1:
-        if alpha == [] and digit == []:
-            break
-        res += alpha[0] * digit[0]
-        alpha.pop(0)
-        digit.pop(0)
-    print(res)
+    print(*list(map(lambda txt, num: txt * int(num), alpha, digit)), sep="")
  
 main()
